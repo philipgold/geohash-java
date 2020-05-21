@@ -36,6 +36,10 @@ Maven targets are the usual suspects.
     - test
     - package   # pack a versioned jar containing the compiled class files
 
+Build  
+```shell script
+mvn install -DskipTests -Dgpg.skip -Dmaven.javadoc.skip=true
+```
 Digits and precision in km
 --------------------------
 | geohash length | lat bits | lng bits | lat error | lng error  | ~km error |
